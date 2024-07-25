@@ -1,0 +1,242 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-image: linear-gradient(to right, rgb(77, 4, 4), rgb(8, 8, 67));
+  height: 100vh;
+}
+
+/* Top Header Styles */
+
+.tophead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-image: linear-gradient(to left, blue, red);
+  border-radius: 15px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: aliceblue;
+  display: flex;
+  border-radius: 50%;
+  border: 2px solid blue;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  height: 30px;
+  width: 70px;
+  background-color: rgb(68, 121, 255);
+  color: white;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+
+.name-container h3 {
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  border: 2px solid rgb(16, 4, 47);
+  background-color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  align-content: center;
+}
+
+.name-container p {
+  text-align: left;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.circle:hover {
+  border: 5px solid rgb(17, 6, 54);
+  transition: 1s ease-in-out;
+}
+
+button:hover {
+}
+
+/* Media Queries for Larger Screens */
+
+@media (min-width: 768px) {
+  .tophead {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 40px;
+  }
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+  .name-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .button-container {
+    gap: 30px;
+  }
+  button {
+    width: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tophead {
+    padding: 20px 60px;
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+  .name-container {
+    gap: 40px;
+  }
+  .button-container {
+    gap: 30px;
+  }
+  button {
+    width: 120px;
+  }
+}
+.middlehead-container {
+  display: flex;
+}
+.middlehead {
+  height: 30vh;
+  width: 100vw;
+  top: 80vh;
+  background-image: linear-gradient(to left, rgb(221, 50, 12), rgb(38, 5, 52));
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.middlehead img {
+  width: 10%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: all ease-in-out 0.5s;
+}
+.middlehead img:hover {
+  width: 25%;
+}
+.bottomhead-container {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.bottomhead {
+  height: 14vh;
+  padding: 10px;
+  width: 100vw;
+  top: 80vh;
+  background-image: linear-gradient(
+    to left,
+    rgb(33, 255, 59),
+    rgb(224, 46, 46)
+  );
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  /* align-items: center; */
+  justify-content: center;
+}
+.bottomhead .links h2 {
+  font-size: 0.5rem;
+  color: rgb(245, 245, 254);
+  background-color: rgb(6, 68, 68);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.socialMedia .x{
+  color: rgb(0, 0, 0);
+}
+
+.socialMedia i{
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  font-size: 40px;
+  margin: 0 30px;
+}
+.socialMedia .ins{
+  color: rgb(145, 24, 46);
+}
+.socialMedia .you{
+  color: rgb(255, 0, 0);
+}
+.socialMedia .lin{
+  color: rgb(6, 59, 232);
+}
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.links{
+  height: 10px;
+  width: 30vw;
+  margin-top: 10px;
+}
+p{
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+
+
+}
+.socialMedia a{
+  text-decoration: none;
+  
+}
